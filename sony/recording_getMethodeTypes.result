@@ -1,0 +1,129 @@
+{
+  "results":[
+    [
+      "addSchedule",
+      [
+        "{\"type\":\"string\", \"uri\":\"string\", \"title\":\"string\", \"startDateTime\":\"string\", \"durationSec\":\"int\", \"repeatType\":\"string\", \"quality\":\"string\"}"
+      ],
+      [
+        "{\"annotation\":\"int\"}"
+      ],
+      "1.0"
+    ],
+    [
+      "deleteSchedule",
+      [
+        "{\"id\":\"string\", \"type\":\"string\", \"uri\":\"string\", \"title\":\"string\", \"startDateTime\":\"string\", \"durationSec\":\"int\"}"
+      ],
+      [
+
+      ],
+      "1.0"
+    ],
+    [
+      "getConflictScheduleList",
+      [
+        "{\"uri\":\"string\", \"title\":\"string\", \"startDateTime\":\"string\", \"durationSec\":\"int\", \"repeatType\":\"string\"}"
+      ],
+      [
+        "{\"id\":\"string\", \"title\":\"string\", \"type\":\"string\", \"uri\":\"string\", \"startDateTime\":\"string\", \"durationSec\":\"int\", \"repeatType\":\"string\"}*"
+      ],
+      "1.0"
+    ],
+    [
+      "getHistoryList",
+      [
+        "{\"stIdx\":\"int\", \"cnt\":\"int\"}"
+      ],
+      [
+        "{\"id\":\"string\", \"title\":\"string\", \"channelName\":\"string\", \"startDateTime\":\"string\", \"durationSec\":\"int\", \"reasonId\":\"int\", \"reasonMsg\":\"string\"}*"
+      ],
+      "1.0"
+    ],
+    [
+      "getRecordingStatus",
+      [
+
+      ],
+      [
+        "{\"status\":\"string\"}"
+      ],
+      "1.0"
+    ],
+    [
+      "getScheduleList",
+      [
+        "{\"stIdx\":\"int\", \"cnt\":\"int\"}"
+      ],
+      [
+        "{\"id\":\"string\", \"type\":\"string\", \"uri\":\"string\", \"title\":\"string\", \"channelName\":\"string\", \"startDateTime\":\"string\", \"durationSec\":\"int\", \"repeatType\":\"string\", \"overlapStatus\":\"string\", \"recordingStatus\":\"string\", \"quality\":\"string\"}*"
+      ],
+      "1.0"
+    ],
+    [
+      "getSupportedRepeatType",
+      [
+
+      ],
+      [
+        "string*"
+      ],
+      "1.0"
+    ],
+    [
+      "getMethodTypes",
+      [
+        "string"
+      ],
+      [
+        "string",
+        "string*",
+        "string*",
+        "string"
+      ],
+      "1.0"
+    ],
+    [
+      "getVersions",
+      [
+
+      ],
+      [
+        "string*"
+      ],
+      "1.0"
+    ],
+    [
+      "addSchedule",
+      [
+        "{\"type\":\"string\", \"uri\":\"string\", \"title\":\"string\", \"startDateTime\":\"string\", \"durationSec\":\"int\", \"repeatType\":\"string\", \"quality\":\"string\", \"eventId\":\"string\"}"
+      ],
+      [
+        "{\"annotation\":\"int\"}"
+      ],
+      "1.1"
+    ],
+    [
+      "getScheduleList",
+      [
+        "{\"stIdx\":\"int\", \"cnt\":\"int\"}"
+      ],
+      [
+        "{\"id\":\"string\", \"type\":\"string\", \"uri\":\"string\", \"title\":\"string\", \"channelName\":\"string\", \"startDateTime\":\"string\", \"durationSec\":\"int\", \"repeatType\":* Connection #0 to host 192.168.1.12 left intact
+\"string\", \"overlapStatus\":\"string\", \"recordingStatus\":\"string\", \"quality\":\"string\", \"eventId\":\"string\"}*"
+      ],
+      "1.1"
+    ],
+    [
+      "addSchedule",
+      [
+        "{\"type\":\"string\", \"uri\":\"string\", \"title\":\"string\", \"startDateTime\":\"string\", \"durationSec\":\"int\", \"repeatType\":\"string\", \"quality\":\"string\", \"eventId\":\"string\", \"id\":\"string\", \"avoidDoubleRecording\":\"string\", \"mode\":\"string\", \"priority\":\"string\", \"storageUri\":\"string\", \"override\":\"string\", \"autoTransfer\":\"string\", \"trackedTitle\":\"string\", \"videoIndex\":\"int\", \"audioIndex\":\"int\", \"subtitleIndex\":\"int\", \"groupId\":\"string\", \"recordItemWithParentalLock\":\"string\"}"
+      ],
+      [
+        "{\"annotation\":\"int\", \"conflict\":\"ConflictSchedule[]\"}"
+      ],
+      "1.2"
+    ]
+  ],
+  "id":7
+}
