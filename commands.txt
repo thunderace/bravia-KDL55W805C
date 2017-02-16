@@ -23,12 +23,9 @@ curl -v http://192.168.1.12:52323/ScalarWebApiSCPD.xml
 
 curl -v -XPOST http://192.168.1.12:52323/upnp/control/ConnectionManager --header 'SOAPACTION: "urn:schemas-upnp-org:service:ConnectionManager:1#GetProtocolInfo"' --header 'Content-Type: text/xml; charset="utf-8"' -d '<?xml version="1.0"?><s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:GetProtocolInfo xmlns:u="urn:schemas-upnp-org:service:ConnectionManager:1"></u:GetProtocolInfo></s:Body></s:Envelope>'
 
-
-
 curl -v -XPOST http://192.168.1.12/sony/accessControl -d '{"method":"getMethodTypes","params":[""],"id":2,"version":"1.0"}'
 
-curl -v -XPOST http://192.168.1.12/sony/encryption -d '{"method":"getMethodTyp
-es","params":[""],"id":3,"version":"1.0"}'
+curl -v -XPOST http://192.168.1.12/sony/encryption -d '{"method":"getMethodTypes","params":[""],"id":3,"version":"1.0"}'
 
 curl -v -XPOST http://192.168.1.12/sony/recording -d '{"method":"getMethodTypes","params":[""],"id":7,"version":"1.0"}'
 
