@@ -1,0 +1,30 @@
+80/tcp    open  http        nginx
+|_http-generator: ERROR: Script execution failed (use -d to debug)
+|_http-methods: No Allow or Public header in OPTIONS response (status code 302)
+|_http-title: Did not follow redirect to http://192.168.1.12:10000/contentshare/WebApp/index.html
+1779/tcp  open  UPnP/1\.0\x20DLNADOC/1\.50 Kodi
+6466/tcp  open  ssl/unknown
+|_ssl-date: 2090-01-19T08:48:55+00:00; +72y336d17h09m38s from local time.
+6467/tcp  open  ssl/unknown
+|_ssl-date: 2033-02-03T16:38:58+00:00; +15y353d0h59m41s from local time.
+6594/tcp  open  tcpwrapped
+8008/tcp  open  http?
+|_http-methods: No Allow or Public header in OPTIONS response (status code 404)
+|_http-title: Site doesn't have a title (text/html).
+8009/tcp  open  ssl/ajp13?
+|_ajp-methods: Failed to get a valid response for the OPTION request
+| ssl-cert: Subject: commonName=d3ed43c2-67c0-c995-5a19-2b4507a57308
+| Issuer: commonName=d3ed43c2-67c0-c995-5a19-2b4507a57308
+| Public Key type: rsa
+| Public Key bits: 2048
+| Not valid before: 2017-02-15T06:12:10+00:00
+| Not valid after:  2017-02-17T06:12:10+00:00
+| MD5:   802e 2df2 4053 891b e386 fb63 16eb db32
+|_SHA-1: 21da aa3c 9ed7 698d 5bcd c359 3b26 422e d6fb d21d
+|_ssl-date: 2073-06-24T09:50:52+00:00; +56y127d18h11m35s from local time.
+8080/tcp  open  http-proxy?
+||_http-title: Kodi
+31403/tcp open  unknown
+44024/tcp open  tcpwrapped
+48196/tcp open  unknown
+64420/tcp open  tcpwrapped
