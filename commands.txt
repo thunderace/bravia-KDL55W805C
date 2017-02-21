@@ -1,5 +1,6 @@
 nmap -p 1-65535 -T4 -A -v 192.168.1.12 --script-args http-server-header.skip
 sudo tshark -i 2 -p -w /root/bravia.cap -f "host 192.168.1.12"
+sudo tshark -w /root/bravia.cap -f "host 192.168.1.12"
 sudo tail -c +1 -f /root/bravia.cap | sudo tcpdump -l -r -
 
 curl -v -XPOST http://192.168.1.12/sony/system -d '{"method":"getMethodTypes","params":[""],"id":1,"version":"1.0"}'
